@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- For dependent Object like Employee has a Address -->
+	<bean id="address" class="com.entity.Address">
+		<property name="addressLine1" value="TriNagar" />
+		<property name="city" value="Indralok Delhi" />
+		<property name="state" value="Delhi" />
+		<property name="country" value="India" />
+	</bean>
+
+	<bean id="emp" class="com.entity.Employee" scope="singleton">
+		<property name="id" value="10" />
+		<property name="name" value="Rohan" />
+		<property name="city" value="Delhi" />
+		<property name="address" ref="address"></property>
+	</bean>
+
+	<!-- For collection object like Question has a list of String answers -->
+
+	<!-- <bean id="question" class="com.entity.Question"> <property name="id" 
+		value="1" /> <property name="name" value="Whate is java?" /> <property name="answers"> 
+		<list> <value>Java is programming language</value> <value>Java is robust 
+		language</value> <value>Java is platfarm indepedent language</value> <value>Java 
+		is secure language</value> </list> </property> </bean> -->
+
+	<!-- For collection object like Question has a List of Answer object -->
+
+	<!-- <bean id="answer1" class="com.entity.Answer">
+		<property name="id" value="11" />
+		<property name="name" value="Java is robust language" />
+		<property name="author" value="raj" />
+	</bean>
+	<bean id="answer2" class="com.entity.Answer">
+		<property name="id" value="22" />
+		<property name="name"
+			value="Java is platfarm indepedent language" />
+		<property name="author" value="amit" />
+	</bean>
+	<bean id="answer3" class="com.entity.Answer">
+		<property name="id" value="33" />
+		<property name="name" value="Java is secure language" />
+		<property name="author" value="aman" />
+	</bean>
+
+	<bean id="question" class="com.entity.Question">
+		<property name="id" value="1" />
+		<property name="name" value="what is java?" />
+		<property name="answers">
+			<list>
+				<ref bean="answer1"></ref>
+				<ref bean="answer2"></ref>
+				<ref bean="answer3"></ref>
+			</list>
+		</property>
+	</bean> -->
+	
+	<!-- For Map Object like Question has a map of answers -->
+	 <bean id = "question" class="com.entity.Question">
+    <property name="id" value="1"/>
+    <property name="name" value = "null"/>
+    <property name="answers">
+      <map>
+       <entry key="Java is robust language" value="A"/>
+       <entry key="Java is programming language" value="B"/>
+       <entry key="Java is secure language" value="C"/>
+      </map>
+    </property>
+    <property name="city">
+    <props>
+     <prop key="one">Noida</prop>
+     <prop key="one">Ghaziabad</prop>
+     <prop key="two">Delhi</prop>
+     <prop key="three">Hariana</prop>
+     <prop key="four">Punjab</prop>
+    </props>
+    </property>
+   </bean>
+</beans>
+               

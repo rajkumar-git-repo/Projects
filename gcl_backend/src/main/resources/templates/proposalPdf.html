@@ -1,0 +1,1845 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+	<div style="font-size: 10px; font-family: Calibri;">
+		<table align="center" cellpadding="0" cellspacing="0" style="max-width: 700px; word-break: break-word">
+			<tr>
+				<td>
+					<table style="display: table-cell; width: 700px; margin: 0 auto;">
+						<tr>
+							<td>
+
+								<table>
+									<tr>
+										<td style="width: 125px; vertical-align: top;"><img th:src="${logoPath}"></img>
+										</td>
+										<td>
+											<div style="background: #ccc; border: 1px solid #000; padding: 10px 15px; -webkit-print-color-adjust: exact;"
+												class="grey-bx">
+												<h1 style="font-size: 20px; margin: 0 0 10px;">MAX LIFE
+													INSURANCE COMPANY LIMITED</h1>
+												<p style="margin: 0;">
+													Regd. Office: 419, Bhai Mohan Singh Nagar, Railmajra,
+													Tehsil Balachaur, District, Nawanshahr, Punjab -144533 <br>Corporate
+													Office: 11th &amp; 12th Floor, DLF Square, Jacaranda, Marg,
+													DLF City, Gurugram, 122002, Haryana</br>
+												</p>
+											</div>
+											<h2 style="font-size: 18px; text-align: center; margin-bottom: 0;">Group
+												Credit Life Secure Application-cum-Health Declaration Form</h2>
+										</td>
+									</tr>
+								</table>
+								<table>
+									<tr>
+										<td></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- <table cellpadding="5" cellspacing="0">
+				<tr>
+					<td style="color: #444;">Home Loan Group Policy No.</td>
+					<td><strong><span th:text="${homeLoanGroupPlicyNo}"/></strong></td>
+				</tr>
+			</table> -->
+					<table cellspacing="0" cellpadding="5">
+						<tr>
+							<td style="color: #444;">Type of Loan:</td>
+							<td><strong><span th:text="${loanType}"></span></strong></td>
+						</tr>
+						<tr>
+							<td style="color: #444;">Type of Coverage:</td>
+							<td><strong><span th:text="${schemeType}"></span></strong></td>
+						</tr>
+					</table>
+
+					<table width="100%" cellpadding="0" cellspacing="0">
+						<tr>
+							<td style="width: 50%;">
+								<table cellpadding="5" cellspacing="0">
+									<tr>
+										<td style="color: #444;">PRODUCT NAME:</td>
+										<td><strong>Max Life Group Credit Life Secure</strong></td>
+									</tr>
+								</table>
+							</td>
+
+							<td style="width: 50%;">
+								<table cellpadding="5" cellspacing="0" align="left">
+									<tr>
+										<td style="color: #444;">GROUP POLICY HOLDER NAME:</td>
+										<td><strong><span th:text="${groupPolicyHolderName}" /></strong></td>
+									</tr>
+								</table>
+
+							</td>
+
+						</tr>
+					</table>
+					<!-- <table cellspacing="0" cellpadding="5" width="100%">
+				<tr>
+					<td>
+						<span style="color: #444;">Customer Relationship with Group Policyholder:</span>&nbsp; <strong><span th:text="${relationshipGpPolicyHolder}"/></strong>
+					</td>
+				</tr>
+			</table> -->
+
+					<table cellpadding="5" cellspacing="0">
+						<tr>
+							<td style="color: #444;">LOAN APPLICATION NO. (In case of
+								Agri/Tractor Loans - Bar Code Number):</td>
+							<td>
+								<!-- <table cellpadding="3" border="1" cellspacing="0">
+							<tr> 
+								<td><strong><span th:text="${loanAppD1}"/></strong></td>
+								<td><strong><span th:text="${loanAppD2}"/></strong></td>
+								<td><strong><span th:text="${loanAppD3}"/></strong></td>
+								<td><strong><span th:text="${loanAppD4}"/></strong></td>
+								<td><strong><span th:text="${loanAppD5}"/></strong></td>
+								<td><strong><span th:text="${loanAppD6}"/></strong></td>
+								<td><strong><span th:text="${loanAppD7}"/></strong></td>
+								<td><strong><span th:text="${loanAppD8}"/></strong></td>
+								<td><strong><span th:text="${loanAppD9}"/></strong></td>
+								<td><strong><span th:text="${loanAppD10}"/></strong></td>
+								
+							</tr>
+						</table> --> <strong> <span th:text="${loanAppNumber}">
+									</span>
+								</strong>
+							</td>
+						</tr>
+					</table>
+
+					<table style="width: 100%; border-top: 1px solid #000;" cellspacing="0" cellpadding="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+					<!-- <table cellspacing="0" cellpadding="5" >
+				<tr>
+					<td style="color: #444;">Name of the Life to be insured :</td>
+					<td><strong><span th:text="${nameOfTheLifeToBeInsured}"/></strong></td>
+				</tr>
+			</table> -->
+					<!-- <table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5" >
+							<tr>
+								<td style="color: #444;">Type of Loan:</td>  
+								<td><strong><span th:text="${loanType}"/></strong></td>
+							</tr>
+						</table>
+					</td>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5" align="left">
+							<tr>   
+								<td style="color: #444;">Loan/Coverage Tenure:</td>
+								<td><strong><span th:text="${loanTenure}"/> Years</strong></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table> -->
+
+					<table width="100%" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="50%">
+								<table cellspacing="0" cellpadding="5">
+									<tr>
+										<td style="color: #444;">Name:</td>
+										<td><strong><span th:text="${customerFullName}"></span></strong></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="50%">
+								<table cellspacing="0" cellpadding="5">
+									<tr>
+										<td style="color: #444;">Date of Birth:</td>
+										<td><strong><span th:text="${customerDob}" /></strong></td>
+									</tr>
+								</table>
+							</td>
+							<td width="50%">
+								<table cellspacing="0" cellpadding="5" align="left">
+									<tr>
+										<td width="90" style="color: #444; text-align: right;">Gender:</td>
+										<td><strong><span th:text="${gender}" /></strong></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- <table cellspacing="0" cellpadding="5" >
+				<tr>
+					<td style="color: #444;">Coverage Scheme Type:</td>
+					<td><strong><span th:text="${schemeType}"/></strong></td>
+				</tr>
+			</table> -->
+					<!-- <table cellspacing="0" cellpadding="5">
+				<tr>
+					<td style="color: #444;">Sum Assured =</td>
+					<td><strong><span th:text="${sumAssured}"/> INR</strong></td>
+					<td><strong>OR</strong></td>
+				</tr>
+			</table>
+			<table cellspacing="0" cellpadding="5" width="100%">
+				<tr>
+					<td colspan="3" style="color: #444;">
+						In case of lesser than total loan amount, please specify :
+					</td>
+					<td><strong></strong></td>
+				</tr>
+			</table> -->
+
+					<table width="100%" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table cellspacing="0" cellpadding="5">
+									<tr>
+										<td style="color: #444;">Mobile No.:</td>
+										<td><strong><span th:text="${mobileNo}" /></strong></td>
+									</tr>
+								</table>
+							</td>
+							<!-- <td>
+						<table cellspacing="0" cellpadding="5" align="left">
+							<tr>
+								<td style="color: #444;">Date of Birth:</td>
+								<td><strong><span th:text="${customerDob}"/></strong></td>
+							</tr>
+						</table>
+					</td> -->
+						</tr>
+					</table>
+
+					<table cellspacing="0" cellpadding="5">
+						<tr>
+							<td style="color: #444;">Email ID:</td>
+							<td><strong><span th:text="${customerEmail}" /></strong></td>
+						</tr>
+					</table>
+
+					<table cellspacing="0" cellpadding="5" width="100%">
+						<tr>
+							<td><span style="color: #444;">Relationship with
+									Group Policyholder:</span>&nbsp; <strong><span
+										th:text="${relationshipGpPolicyHolder}" /></strong></td>
+						</tr>
+					</table>
+					<table cellspacing="0" cellpadding="5" width="100%">
+						<tr>
+							<td><span style="color: #444;">Benefit Option :</span>&nbsp;
+								<strong><span th:text="${ciriderType}" /></strong></td>
+						</tr>
+					</table>
+					<th:block th:if="${ciriderType == 'Base + Critical Illness (Accelerated Benefit) Rider'}">
+						<table cellspacing="0" cellpadding="5" width="100%">
+							<tr>
+								<td><span style="color: #444;">Critical Illness
+										(Accelerated Benefit) Rider Option* :</span>&nbsp; <strong><span
+											th:text="${ciOption}" /></strong></td>
+							</tr>
+						</table>
+					</th:block>
+					<!-- 		<th:block th:if="${ciriderType == 'Base + Critical Illness (Accelerated Benefit) Rider'}">
+					<table cellspacing="0" cellpadding="5" width="100%">
+						<tr>
+							<td><span style="color: #444;">Percentage Of Sum Assured :</span>&nbsp;
+								<strong><span th:text="${percentageOfSumAssured}" /></strong></td>
+						</tr>
+					</table>
+					</th:block>
+					
+					<th:block th:if="${ciriderType == 'Base + Critical Illness (Accelerated Benefit) Rider'}">
+					<table cellspacing="0" cellpadding="5" width="100%">
+						<tr>
+							<td><span style="color: #444;">Ci Rider Sum Assured :</span>&nbsp;
+								<strong><span th:text="${ciRiderSumAssured}" /></strong></td>
+						</tr>
+					</table>
+					</th:block>
+					
+					<th:block th:if="${ciriderType == 'Base + Critical Illness (Accelerated Benefit) Rider'}">
+					<table cellspacing="0" cellpadding="5" width="100%">
+						<tr>
+							<td><span style="color: #444;">Ci Tenure Years :</span>&nbsp;
+								<strong><span th:text="${ciTenureYears}" /></strong></td>
+						</tr>
+					</table>
+					</th:block> -->
+
+					<table>
+						<tr>
+							<td><span> *Period of Insurance (In Years), ROI % and
+									Sum Assured [* Details as per the Group Policyholder record] </span></td>
+						</tr>
+					</table>
+
+					<table style="width: 100%; border-top: 1px solid #000;" cellspacing="0" cellpadding="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table> <br /> <!-- plz don't remove this code -->
+					<!--
+		<table style="width: 100%; border-top: 1px solid #000;" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<strong>
+							Occupation:
+						</strong>
+					</td>
+				</tr>
+		</table>
+		
+			<br/>
+			<table cellspacing="0" width="100%" cellpadding="5" style="border:1px solid #434343;margin-bottom:10px;">
+			 	<thead>
+                    <tr>
+                        <th align="left"><span th:text="${occupation}"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+				<tr th:each="map : ${savedAnswer}">
+					<th:block th:switch="${map.get('type')}">
+						<th:block th:case="'OCCUPATION'">
+							<td style="border-top:1px solid #434343">
+								<span th:text="${map.get('question') + ': '}"></span>
+								<th:block th:switch="${map.get('qType')}">
+									<th:block th:case="'DESCRIPTION_TYPE'">
+											<strong>
+											<span th:text="${map.get('description')}"></span>
+											</strong>
+									</th:block>
+									<th:block th:case="'REMARK_TYPE'">
+											<strong>
+												<span th:text = "${map.get('flag')}"></span>
+										        <span th:text = "${map.get('description')}"></span>											
+											</strong>
+									</th:block>
+									<th:block th:case="'YES_NO_TYPE'">
+											<strong>
+												<span th:text="${map.get('flag')}"></span>
+											</strong>
+									</th:block>
+									<th:block th:case="'DATE_TYPE'">
+										<strong>
+											<span th:text="${map.get('description')}"></span>	
+										</strong>
+									</th:block>
+									<th:block th:case="'LISTING_TYPE'">
+										<th:block th:each="option : ${map.get('selectedOptions')}">
+											<strong><span th:text = "${option.value}"></span></strong>
+										</th:block>
+									</th:block>
+									<th:block th:case="'MULTIPLE_SELECTION_TYPE'">
+										<th:block  th:each="option : ${map.get('selectedOptions')}">
+											<strong>
+											<span th:text = "${option.value}"></span>
+											</strong>
+										</th:block>
+									</th:block>
+								</th:block>
+								</td>
+						</th:block>
+					</th:block>
+				</tr>
+			</tbody>
+		</table> -->
+
+					<table cellspacing="0" cellpadding="5">
+						<tr>
+							<th:block th:if="${financePrimum == 'false' or financePrimum == 'No'}">
+								<td>Address</td>
+						<tr>
+							<td style="width: 50%;">
+								<table cellpadding="5" cellspacing="0">
+									<tr>
+										<td style="color: #444;">Address Line 1:</td>
+										<td><strong><span th:text="${address1}"></span></strong></td>
+									</tr>
+									<tr>
+										<td style="color: #444;">Address Line 3:</td>
+										<td><strong><span th:text="${address3}"></span></strong></td>
+									</tr>
+									<tr>
+										<td style="color: #444;">Town:</td>
+										<td><strong><span th:text="${town}"></span></strong></td>
+									</tr>
+									<tr>
+										<td style="color: #444;">State:</td>
+										<td><strong><span th:text="${state}"></span></strong></td>
+									</tr>
+								</table>
+							</td>
+
+							<td style="width: 50%;">
+								<table cellpadding="5" cellspacing="0" align="left">
+									<tr>
+										<td style="color: #444;">Address Line 2:</td>
+										<td><strong><span th:text="${address2}" /></strong></td>
+									</tr>
+									<tr>
+										<td style="color: #444;">Street:</td>
+										<td><strong><span th:text="${street}" /></strong></td>
+									</tr>
+									<tr>
+										<td style="color: #444;">Pincode:</td>
+										<td><strong><span th:text="${pincode}" /></strong></td>
+									</tr>
+									<tr>
+										<td style="color: #444;">Country:</td>
+										<td><strong><span th:text="${country}" /></strong></td>
+									</tr>
+								</table>
+
+							</td>
+
+						</tr>
+						</th:block>
+			</tr>
+
+			<tr>
+				<td>Resident Type:</td>
+				<td><strong><span th:text="${nationality}"></span></strong></td>
+				<th:block th:if="${nationality == 'Other'}">
+					<td>If others, please specify place of residence: <strong><span
+								th:text="${otherPlace}"></span></strong></td>
+				</th:block>
+
+			</tr>
+		</table>
+		<!-- <table cellspacing="0" width="100%" cellpadding="5" style="border:1px solid #434343;margin-bottom:10px;">
+			 	<thead>
+                    <tr>
+                        <th>If Nationality is other than Indian</th>
+                    </tr>
+                </thead>
+                 <tbody>
+					<th:block th:if="${nationality == 'NRI' or nationality == 'Other'}">
+						<tr th:each="map : ${savedAnswer}">
+								<td th:text="${map.get('question')}"/>
+									<th:block th:switch="${map.get('qType')}">
+										<th:block th:case="'DESCRIPTION_TYPE'">
+											<strong>
+											<span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'REMARK_TYPE'">
+											<strong>
+											<span th:text = "${map.get('flag')}"></span>, 
+											<span th:text = "${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'YES_NO_TYPE'">
+											<strong>
+											<span th:text="${map.get('flag')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'DATE_TYPE'">
+											<strong>
+											<span th:text="${map.get('description')}"></span>											
+											</strong>
+										</th:block>
+										<th:block th:case="'LISTING_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong>
+												<span th:text = "${option.value}"></span>
+												</strong>
+											</th:block>
+										</th:block>
+										<th:block th:case="'MULTIPLE_SELECTION_TYPE'">
+											<th:block  th:each="option : ${map.get('selectedOptions')}">
+												<strong>
+												<span th:text = "${option.value}"></span>
+												</strong>
+											</th:block>
+										</th:block>
+									</th:block>
+						</tr>
+					</th:block>
+					<tr>
+                		<td style="border-top:1px solid #434343;"><strong>Disclaimer: Kindly share the attested copy of passport showing latest entry to India through email ID</strong></td>
+           			</tr>
+				</tbody>
+			</table> -->
+		<th:block th:if="${nationality == 'NRI' or nationality == 'Other'}">
+			<table cellspacing="0" width="100%" cellpadding="5" style="border: 1px solid #434343; margin-bottom: 10px;">
+				<thead>
+					<tr>
+						<th>If Nationality is other than "Indian"</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr style="max-width: 100px" th:each="map : ${savedAnswer}">
+						<th:block th:switch="${map.get('type')}">
+							<th:block th:case="'NATIONALITY'">
+								<td
+									style="border-top: 1px solid #434343;max-width: 100%;text-overflow: ellipsis;word-break: break-all">
+									<span th:text="${map.get('question') + ': '}"></span>
+									<th:block th:switch="${map.get('qType')}">
+										<th:block th:case="'DESCRIPTION_TYPE'">
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'REMARK_TYPE'">
+											<strong> <span th:text="${map.get('flag')}"></span>,
+											</strong>
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'YES_NO_TYPE'">
+											<strong> <span th:text="${map.get('flag')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'DATE_TYPE'">
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'LISTING_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong> <span th:text="${option.value}"></span>
+												</strong>
+											</th:block>
+										</th:block>
+										<th:block th:case="'MULTIPLE_SELECTION_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong
+													style="max-width: 100%;text-overflow: ellipsis;word-break: break-all">
+													<span th:text="${option.value}"></span>
+													&nbsp;
+												</strong>
+											</th:block>
+										</th:block>
+									</th:block>
+								</td>
+							</th:block>
+						</th:block>
+					</tr>
+					<tr>
+						<td style="border-top: 1px solid #434343;"><strong>Disclaimer:
+								Kindly share the attested copy of passport showing latest
+								entry to India through email ID</strong></td>
+					</tr>
+				</tbody>
+			</table>
+		</th:block>
+
+		<table>
+			<tr>
+				<td>
+					<h3 style="text-align: center; font-size: 10px;">DECLARATION
+						OF GOOD HEALTH</h3>
+				</td>
+			</tr>
+		</table>
+		<table style="width: 100%; border-top: 1px solid #000;" cellspacing="0" cellpadding="0">
+			<tr>
+				<td></td>
+			</tr>
+		</table> <br /> <br />
+		<table border="1" cellspacing="0" cellpadding="10" width="100%">
+			<tr>
+				<td>
+					<div>
+						<h1 style="text-align: center; font-size: 16px;">Your
+							Health Declaration Form</h1>
+						<ol style="padding-left: 20px;">
+							<li>Currently I am in good physical and mental health.</li>
+							<li>I perform all my routine activities independently.</li>
+							<li>I have never had any physical defect, deformity or
+								disability# affecting my day to day activities.</li>
+							<li>I have never suffered and not currently suffering
+								from:
+								<ul style="padding-left: 20px;">
+									<li>High Blood Pressure, Heart Attack or any other
+										Heart Disease;</li>
+									<li>Stroke, Paralysis in any form, or any other
+										Cerebrovascular Disease;</li>
+									<li>Diabetes or any other Endocrinal Disease, Kidney
+										Disease;</li>
+									<li>Any Chronic Liver Disease;</li>
+									<li>Chronic Obstructive Pulmonary Disease, Parenchymal
+										Lung Disease, Pulmonary Embolism;</li>
+									<li>Blood Disorders, Gastro-Intestinal Diseases, or any
+										other disorder of the bones, spine or muscle;</li>
+									<li>Any Cancer or Cancerous growth;</li>
+									<li>Any Mental or Psychiatric condition, any Genetic
+										Disease or any disease related to central nervous system
+										(disease related to brain);</li>
+									<li>HIV / AIDS or AIDS related complications.</li>
+								</ul>
+							</li>
+							<li>I have never undergone nor have I been advised to
+								undergo any major surgical procedure.</li>
+							<li>In the last 5 years, I have not-
+								<ul style="padding-left: 20px;">
+									<li>been continuously absent from work for more than 7
+										days for any disability# or medical conditions excluding
+										minor health conditions such as common cough or cold, or</li>
+									<li>undergone any investigations (including basic
+										radiological and blood tests) other than normal Health
+										Check-ups and Insurance Medicals, or</li>
+									<li>had adverse result for any blood tests, X-Rays,
+										ECG, Stress Test, Biopsies, CT Scan, MRI, Ultrasonography
+										or 2D / 3D Echo etc.</li>
+								</ul>
+							</li>
+							<li>I have not had any proposal and / or policy for life,
+								health, accident or critical illness, including renewals /
+								revivals therefor, declined or deferred by any insurance
+								company in India or Overseas.</li>
+							<li>I do not engage or intend to engage in any business,
+								sport or occupation or any hobby of a hazardous nature such
+								as mining, diving, Mountaineering, parachuting, private
+								aviation, racing, etc.</li>
+						</ol>
+						<p>
+							<i>#Disability means inability to function normally,
+								physically or mentally</i>
+						</p>
+						<p>
+							<i>If declaration is negative, please provide details in
+								below space provided </i>
+						</p>
+						<p>
+							<u><span th:text="${negativeDeclaration}" /></u>
+						</p>
+					</div>
+					<div>
+						<p>
+							Do you have any life or health insurance policy
+							issued/pending/lapsed with Max Life Insurance Company Ltd? If
+							yes, please provide the proposal/policy number/application
+							no.:&nbps;<span th:text="${applicationNumber}" />
+						</p>
+					</div>
+					<!-- <table width="100%" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<table cellspacing="0" cellpadding="5">
+										<tr>
+											<td>Signature of Life to be insured:</td>
+											<td><strong>OTP verified</strong></td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table cellspacing="0" cellpadding="5" align="right">
+										<tr>
+											<td>Date:</td>  
+											<td><strong><span th:text="${signedDate}"/></strong></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table> -->
+				</td>
+			</tr>
+		</table> <br />
+
+		<th:block th:if="${tempDiabetes == 'DIABETES'}">
+			<table cellspacing="0" width="100%" cellpadding="5" style="border: 1px solid #434343; margin-bottom: 10px;">
+				<thead>
+					<tr>
+						<th style="border-top: 1px solid #434343;"><strong>Diabetes
+								question ticked as 'Yes'</strong></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr style="max-width: 100px" th:each="map : ${savedAnswer}">
+						<th:block th:switch="${map.get('subType')}">
+							<th:block th:case="'DIABETES'">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;">
+									<span th:text="${map.get('question') + ': '}"></span>
+									<th:block th:switch="${map.get('qType')}">
+										<th:block th:case="'DESCRIPTION_TYPE'">
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'REMARK_TYPE'">
+											<strong> <span th:text="${map.get('flag')}"></span>,
+											</strong>
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'YES_NO_TYPE'">
+											<strong> <span th:text="${map.get('flag')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'DATE_TYPE'">
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'LISTING_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong> <span th:text="${option.value}"></span>
+												</strong>
+											</th:block>
+										</th:block>
+										<th:block th:case="'MULTIPLE_SELECTION_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong> <span th:text="${option.value}"></span>
+													&nbsp;
+												</strong>
+											</th:block>
+										</th:block>
+									</th:block>
+								</td>
+							</th:block>
+						</th:block>
+					</tr>
+				</tbody>
+			</table>
+		</th:block>
+		<th:block th:if="${tempHypertenstion == 'HYPERTENSION'}">
+			<table cellspacing="0" width="100%" cellpadding="5" style="border: 1px solid #434343; margin-bottom: 10px;">
+				<thead>
+					<tr>
+						<th style="border-top: 1px solid #434343;"><strong>Hypertension
+								question ticked as 'Yes'</strong></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr style="max-width: 100px" th:each="map : ${savedAnswer}">
+						<th:block th:switch="${map.get('subType')}">
+							<th:block th:case="'HYPERTENSION'">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;">
+									<span th:text="${map.get('question') + ': '}"></span>
+									<th:block th:switch="${map.get('qType')}">
+										<th:block th:case="'DESCRIPTION_TYPE'">
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'REMARK_TYPE'">
+											<strong> <span th:text="${map.get('flag')}"></span>
+											</strong>
+
+											<strong style="word-wrap: break-word;"> <span
+													th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'YES_NO_TYPE'">
+											<strong> <span th:text="${map.get('flag')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'DATE_TYPE'">
+											<strong style="word-wrap: break-word;"> <span
+													th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'LISTING_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong> <span th:text="${option.value}"></span>
+												</strong>
+											</th:block>
+										</th:block>
+										<th:block th:case="'MULTIPLE_SELECTION_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong> <span th:text="${option.value}"></span>
+													&nbsp;
+												</strong>
+											</th:block>
+										</th:block>
+									</th:block>
+								</td>
+							</th:block>
+						</th:block>
+					</tr>
+				</tbody>
+			</table>
+		</th:block>
+		<th:block th:if="${tempAsthama == 'ASTHMA'}">
+			<table cellspacing="0" width="100%" cellpadding="5" style="border: 1px solid #434343; margin-bottom: 10px;">
+				<thead>
+					<tr>
+						<th style="border-top: 1px solid #434343;"><strong>Asthma
+								question ticked as 'Yes'</strong></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr style="max-width: 100px" th:each="map : ${savedAnswer}">
+						<th:block th:switch="${map.get('subType')}">
+							<th:block th:case="'ASTHMA'">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100px;text-overflow: ellipsis;word-break: break-all;">
+									<span th:text="${map.get('question') + ': '}"></span>
+									<th:block th:switch="${map.get('qType')}">
+										<th:block th:case="'DESCRIPTION_TYPE'">
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'REMARK_TYPE'">
+											<strong> <span th:text="${map.get('flag')}"></span>,
+											</strong>
+											<strong style="word-wrap: break-word;"> <span
+													th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'YES_NO_TYPE'">
+											<strong> <span th:text="${map.get('flag')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'DATE_TYPE'">
+											<strong> <span th:text="${map.get('description')}"></span>
+											</strong>
+										</th:block>
+										<th:block th:case="'LISTING_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong><span th:text="${option.value}"></span>
+												</strong>
+											</th:block>
+										</th:block>
+										<th:block th:case="'MULTIPLE_SELECTION_TYPE'">
+											<th:block th:each="option : ${map.get('selectedOptions')}">
+												<strong> <span th:text="${option.value}"></span>
+													&nbsp;
+												</strong>
+											</th:block>
+										</th:block>
+									</th:block>
+								</td>
+							</th:block>
+						</th:block>
+					</tr>
+				</tbody>
+			</table>
+		</th:block> <!-- Nikhilesh -->
+
+		<!-- this code for other health confirmation  suggested by anuj tester-->
+		<th:block th:if="${otherHealth !=null}">
+			<table cellspacing="0" width="100%" cellpadding="5" style="border: 1px solid #434343; margin-bottom: 10px;">
+				<thead>
+					<tr>
+						<th style="border-top: 1px solid #434343;"><strong>Other
+								Health Confirmation question ticked as 'Yes'</strong></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr style="max-width: 100px">
+						<td
+							style="border-top: 1px solid #434343;max-width: 100%;text-overflow: ellipsis;word-break: break-all">
+							<span th:text="${otherHealth}"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</th:block>
+
+		<div th:if="${isCovidActive == 'Yes'}">
+			<h4>COVID-19 (Corona virus) Exposure Questionnaire</h4>
+			<th:block th:if="${isCovidActive == 'Yes'}">
+				<table cellspacing="0" width="100%" cellpadding="5"
+					style="border: 1px solid #434343; margin-bottom: 10px;">
+					<thead>
+						<tr>
+							<td style="border-top: 1px solid #434343; text-align: left;">1. Are you, or have you
+								been in close contact with an individual confirmed /suspected to have COVID-19
+								(SARS-CoV-2/COVID-19) OR travelled abroad post 1st Jan 2020 OR do you have plan to
+								travel overseas in upcoming 6 months, if yes then specify country/duration of stay/date
+								of return in India and on your return to India if you were advised to be
+								quarantine/Isolated for COVID-19,<strong>question ticked as <span
+										th:if="${covid.get('firstAnswer') != null}" th:text="Yes"></span>
+									<span th:if="${covid.get('firstAnswer') == null}" th:text="No"></span></strong>
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="max-width: 100px">
+
+							<th:block th:if="${covid.get('firstAnswer') != null}">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;   text-align: left;">
+
+
+									<th:block>
+										<strong><span>Details:</span></strong>
+										<span th:text="${covid.get('firstAnswer')}"></span>
+									</th:block>
+
+
+								</td>
+							</th:block>
+
+						</tr>
+					</tbody>
+				</table>
+			</th:block>
+			<th:block th:if="${isCovidActive == 'Yes'}">
+				<table cellspacing="0" width="100%" cellpadding="5"
+					style="border: 1px solid #434343; margin-bottom: 10px;">
+					<thead>
+						<tr>
+							<td style="border-top: 1px solid #434343;text-align: left;">2.In the last 3 months have you
+								or
+								your family, have been advised to be tested to rule in, Or rule out, a diagnosis of
+								novel
+								coronavirus (SARS-CoV-2/COVID-19)/ tested positive for COVID-19(SARS-CoV-2/COVID-19)
+								/Or,
+								are you awaiting the result of a test which has already been submitted for the COVID-19,
+								<strong>question ticked as <span th:if="${covid.get('secondAnswer') != null}"
+										th:text="Yes"></span>
+									<span th:if="${covid.get('secondAnswer') == null}" th:text="No"></span></strong>
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="max-width: 100px">
+
+							<th:block th:if="${covid.get('secondAnswer') != null}">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;">
+
+
+									<th:block>
+										<strong><span>Details:</span></strong>
+										<span th:text="${covid.get('secondAnswer')}"></span>
+
+									</th:block>
+
+
+								</td>
+							</th:block>
+
+						</tr>
+					</tbody>
+				</table>
+			</th:block>
+			<th:block th:if="${isCovidActive == 'Yes'}">
+				<table cellspacing="0" width="100%" cellpadding="5"
+					style="border: 1px solid #434343; margin-bottom: 10px;">
+					<thead>
+						<tr>
+							<td style="border-top: 1px solid #434343;text-align: left;">3. Have you /family member
+								experienced any of the following symptoms within the last 2 months? If yes to any of
+								these,
+								please indicate which and provide full information (Did you consult doctor for the same
+								/were any investigation /treatment given /what was exact diagnosis/ have you made a full
+								recovery and returned to normal activities? If so when was this)
+							</td>
+						</tr>
+						<tr>
+							<td style="border-top: 1px solid #434343;text-align: left;">
+								3.a. Had a persistent Cough, Malaise (flu-like tiredness)/Sore throat/fever, raised
+								temperature, Shortness of breath, Gastro-intestinal symptoms such as nausea, vomiting
+								and/or
+								diarrhea, rhinorrhea (mucus discharge from the nose),<strong> question ticked as
+									<span th:if="${covid.get('thirdAnswer_a') != null}" th:text="Yes"></span>
+									<span th:if="${covid.get('thirdAnswer_a') == null}"
+										th:text="No"></span></strong><br /><br />
+
+							</td>
+						</tr>
+						<tr>
+							<td style="border-top: 1px solid #434343;text-align: left;">
+								3.b. Have ever been advised to self-isolate/quarantined or location of your residence
+								is quarantined by Health/government authorities due to COVID-19 (excluding mandatory
+								government orders to remain at home),<strong>question ticked as <span
+										th:if="${covid.get('thirdAnswer_b') != null}" th:text="Yes"></span>
+									<span th:if="${covid.get('thirdAnswer_b') == null}" th:text="No"></span></strong>
+							</td>
+						</tr>
+
+					</thead>
+					<tbody>
+						<tr style="max-width: 100px">
+							<th:block
+								th:if="${covid.get('thirdAnswer_a') != null and covid.get('thirdAnswer_b') == null}">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;">
+									<th:block>
+										<strong><span>Details:</span></strong>
+										<span th:text="${covid.get('thirdAnswer_a')}"></span>
+									</th:block>
+								</td>
+							</th:block>
+							<th:block
+								th:if="${covid.get('thirdAnswer_a') == null and covid.get('thirdAnswer_b') != null}">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;">
+									<th:block>
+										<strong><span>Details:</span></strong>
+										<span th:text="${covid.get('thirdAnswer_b')}"></span>
+									</th:block>
+								</td>
+							</th:block>
+							<th:block
+								th:if="${covid.get('thirdAnswer_a') != null and covid.get('thirdAnswer_b') != null}">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;">
+									<th:block>
+										<strong><span>Details:</span></strong>
+										<span th:text="${covid.get('thirdAnswer_a')}"></span>
+									</th:block>
+								</td>
+							</th:block>
+						</tr>
+					</tbody>
+				</table>
+			</th:block>
+			<th:block th:if="${isCovidActive == 'Yes'}">
+				<table cellspacing="0" width="100%" cellpadding="5"
+					style="border: 1px solid #434343; margin-bottom: 10px;">
+					<thead>
+						<tr>
+							<td style="border-top: 1px solid #434343;text-align: left;">4.Are you currently in good
+								health?,<strong> question ticked as <span th:if="${covid.get('fourthAnswer') != null}"
+										th:text="No"></span>
+									<span th:if="${covid.get('fourthAnswer') == null}" th:text="Yes"></span></strong>
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="max-width: 100px">
+
+							<th:block th:if="${covid.get('fourthAnswer') != null}">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;">
+
+
+									<th:block>
+										<strong><span>Details:</span></strong>
+										<span th:text="${covid.get('fourthAnswer')}"></span>
+
+									</th:block>
+
+
+								</td>
+							</th:block>
+
+						</tr>
+					</tbody>
+				</table>
+			</th:block>
+
+			<th:block th:if="${isCovidActive == 'Yes'}">
+				<table cellspacing="0" width="100%" cellpadding="5"
+					style="border: 1px solid #434343; margin-bottom: 10px;">
+					<thead>
+						<tr>
+							<td style="border-top: 1px solid #434343;text-align: left;">5.Do you work in an
+								occupation, where you have a higher risk to get in close Contact with COVID-19
+								patients / suspects / testing specimens / coronavirus contaminated material? (If yes,
+								please share details about your exact occupational duties), <strong> question ticked as
+									<span th:if="${covid.get('fifthAnswer') != null}" th:text="Yes"></span>
+									<span th:if="${covid.get('fifthAnswer') == null}" th:text="No"></span></strong></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="max-width: 100px">
+
+							<th:block th:if="${covid.get('fifthAnswer') != null}">
+								<td
+									style="border-top: 1px solid #434343; max-width: 100%;text-overflow: ellipsis;word-break: break-all;">
+
+
+									<th:block>
+										<strong><span>Details:</span></strong>
+										<span th:text="${covid.get('fifthAnswer')}"></span>
+									</th:block>
+
+
+								</td>
+							</th:block>
+
+						</tr>
+					</tbody>
+
+				</table>
+			</th:block>
+			<p align=" justify">
+				<strong> Covid Declaration: </strong>I confirm that the answers I have given are, to the best of my
+				knowledge, true, and that I have not withheld any material information that may influence the assessment
+				or
+				acceptance of this application.
+				I agree that this form will constitute part of my application for insurance(s) and that failure to
+				disclose
+				any material fact known to me may invalidate my insurance(s).
+			</p>
+		</div> <br></br>
+		<th:block th:if="${ciriderType == 'Base + Critical Illness (Accelerated Benefit) Rider'}">
+			<table cellspacing="0" width="100%" cellpadding="0" border="1px solid black">
+				<tbody>
+					<tr>
+						<td style="width: 743px; text-align: center; height: 32px;"><b>Health
+								Declaration questions for Critical Illness Rider in Yes or No</b></td>
+						<td style="width: 124px; text-align: center; height: 32px; border: 1px solid black;"><b>Yes</b>
+						</td>
+						<td style="width: 127px; height: 32px; text-align: center; border: 1px solid black;"><b>No</b>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; height: 43px; margin: 10px 0 10px">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Have you consulted any
+								doctor for
+								treatment or are under treatment for any ailment other than
+								common cough or cold or undergone any surgical operation at a
+								hospital or clinic or undergone any investigations with other
+								than normal or negative results (including X rays, ECG, blood
+								tests, biopsies etc.) or have you been absent from work due
+								to any illness or injury or disability or medical condition
+								for a continuous period of more than 7 days during the last 5
+								years or is any surgery planned or are you currently aware
+								that you may need to seek medical advice in the near future?
+							</p>
+						</td>
+						<td style="width: 124px; text-align: center; height: 43px; border: 1px solid black;">
+							<th:block th:if="${question1 == 'Yes'}">
+								<strong><span th:text="${question1}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; text-align: center; height: 43px; border: 1px solid black;">
+							<th:block th:if="${question1 == 'No'}">
+								<strong><span th:text="${question1}"> </span></strong>
+							</th:block>
+						</td>
+
+
+
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px; height: 43px;">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Have you ever suffered or
+								suffering or
+								been treated for or had any complaints of blood pressure
+								disorders, chest pain or any heart disease, raised blood
+								sugars or any other endocrinal disorder (including thyroid),
+								stroke, paralysis in any form or any cerebrovascular disease,
+								kidney and urinary tract disease, or any other genitourinary
+								diseases, cancer or any cancerous growth or any tumour,
+								growth or lump of any kind, any lung disease or any other
+								respiratory disease(including asthma, chronic obstructive
+								disease, pulmonary embolism, parenchymal lung disease, etc),
+								any Mental or psychiatric condition, any genetic disease or
+								any disorder related to central nervous system (disease
+								related to brain); any liver disease (including jaundice,
+								Hepatitis B or C, chronic pulmonary disease, pulmonary
+								embolism etc), any blood disorders (including anaemia), any
+								digestive or bowel disorder or any other gastro-intestinal
+								disease, paraplegia or any other disorder of the bones,
+								joints, spine or muscle, problems of stones in any organ in
+								the body, HIV infection, AIDS or AIDS related complications</p>
+						</td>
+
+						<td style="width: 124px; text-align: center; height: 43px; border: 1px solid black;">
+							<th:block th:if="${question2 == 'Yes'}">
+								<strong><span th:text="${question2}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px;text-align: center; border: 1px solid black;">
+							<th:block th:if="${question2 == 'No'}">
+								<strong><span th:text="${question2}"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px ;height: 43px;">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Have any of your
+								applications,
+								including applications for life, critical illness, health,
+								accident or any other riders including
+								simultaneous/renewals/revivals ever been declined, deferred,
+								withdrawn or accepted at extra premium or cover reduced or
+								offered any special terms by Max Life or any other insurance
+								company in India or overseas?</p>
+						</td>
+						<td style="width: 124px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question3 == 'Yes'}">
+								<strong><span th:text="${question3}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question3 == 'No'}">
+								<strong><span th:text="${question3}"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px;height: 43px;">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Have you ever been involved
+								or
+								planning to be involved in an occupation, sport or hobby of a
+								dangerous or hazardous nature such as mining, diving,
+								mountaineering, parachuting, private aviation, racing, etc.?</p>
+
+						</td>
+						<td style="width: 124px; height: 43px; text-align: center;border: 1px solid black;">
+							<th:block th:if="${question4 == 'Yes'}">
+								<strong><span th:text="${question4}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question4 == 'No'}">
+								<strong><span th:text="${question4}"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px; height: 43px;">
+
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Do you have any parent and
+								/or brother
+								or sister who has suffered/suffering from, or died under the
+								age of 60 due to any of the following conditions: Heart
+								disease, diabetes, stroke, hypertension, raised cholesterol,
+								cancer, multiple sclerosis, Alzheimer disease, Parkinson
+								disease or any hereditary disease?</p>
+
+						</td>
+						<td style="width: 124px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question5 == 'Yes'}">
+								<strong> <span th:text="${question5}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question5 == 'No'}">
+								<strong><span th:text="${question5}"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px;height: 43px;">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Have you ever been
+								diagnosed with any
+								form of internal or external congenital anomaly or defect
+								i.e. any condition(s) which is present since birth, and which
+								is abnormal with reference to form, structure or position?</p>
+
+						</td>
+						<td style="width: 124px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question6 == 'Yes'}">
+								<strong><span th:text="${question6}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question6 == 'No'}">
+								<strong><span th:text="${question6}"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+					<tr style="height: 43px;max-width: 100px">
+						<th:block th:if="${question7 == 'Yes'}">
+							<td style="width: 743px; height: 43px;">
+								<p align="justify" style="margin-left: 7px; margin-right: 7px;">Have you
+									had any genetic testing before? If yes, please provide
+									details:<strong><span th:text="${ciHealthDecsAns}"></span></strong></p>
+
+							</td>
+						</th:block>
+						<th:block th:if="${question7 == 'No'}">
+							<td style="width: 743px; height: 43px;">
+								<p align="justify" style="margin-left: 7px; margin-right: 7px;">Have you
+									had any genetic testing before? If yes, please provide
+									details.____________________________________________</p>
+
+							</td>
+						</th:block>
+						<td style="width: 124px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question7 == 'Yes'}">
+								<strong><span th:text="${question7}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${question7 == 'No'}">
+								<strong><span th:text="${question7}"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</th:block> <br></br>
+		<!-- <th:block th:if="${isCovidActive == 'Yes'}">
+			<table cellspacing="0" width="100%" cellpadding="0" border="1px solid black">
+				<tbody>
+					<tr>
+						<td style="width: 743px; text-align: center; height: 32px;"><b>COVID-19
+								(Corona virus) Exposure Questionnaire</b></td>
+						<td style="width: 124px; text-align: center; height: 32px; border: 1px solid black;"><b>Yes</b>
+						</td>
+						<td style="width: 127px; height: 32px; text-align: center; border: 1px solid black;"><b>No</b>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; height: 43px; margin: 10px 0 10px">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Are you, or have you
+								been in close contact
+								with an individual confirmed /suspected to have COVID-19
+								(SARS-CoV-2/COVID-19) OR travelled abroad post 1st Jan 2020
+								OR do you have plan to travel overseas in upcoming 6 months,
+								if yes then specify country/duration of stay/date of return in
+								India and on your return
+								to India if you were advised to be
+								quarantine/Isolated for COVID-19. If yes, please provide details.
+							</p>
+						</td>
+						<td style="width: 124px; text-align: center; height: 43px; border: 1px solid black;">
+							<th:block th:if="${covid.get('firstAnswer') != null}">
+								<strong><span th:text="${covid.get('firstAnswer')}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; text-align: center; height: 43px; border: 1px solid black;">
+							<th:block th:if="${covid.get('firstAnswer') == null}">
+								<strong><span th:text="Yes"> </span></strong>
+							</th:block>
+						</td>
+
+
+
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px; height: 43px;">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">In the last 3 months
+								have you or your family, have been advised to be tested to rule in, Or rule out, a
+								diagnosis of novel coronavirus (SARS-CoV-2/COVID-19)/ tested positive for
+								COVID-19(SARS-CoV-2/COVID-19) /Or, are you awaiting the result of a test which has
+								already been submitted for the COVID-19. If yes, please provide details. </p>
+						</td>
+
+						<td style="width: 124px; text-align: center; height: 43px; border: 1px solid black;">
+							<th:block th:if="${covid.get('secondAnswer') != null}">
+								<strong><span th:text="${covid.get('secondAnswer')}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px;text-align: center; border: 1px solid black;">
+							<th:block th:if="${covid.get('secondAnswer') == null}">
+								<strong><span th:text="Yes"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px ;height: 43px;">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;"> Have you /family member
+								experienced any of the following symptoms within the last 2 months? If yes to any of
+								these, please indicate which and provide full information (Did you consult doctor for
+								the same /were any investigation /treatment given /what was exact diagnosis/ have you
+								made a full recovery and returned to normal activities? If so when was this)</p>
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;"> a) Had a persistent Cough,
+								Malaise (flu-like tiredness)/Sore throat/fever, raised temperature, Shortness of breath,
+								Gastro-intestinal symptoms such as nausea, vomiting and/or diarrhea, rhinorrhea (mucus
+								discharge from the nose) </p>
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;"> b) Have ever been advised
+								to self-isolate/quarantined or location of your residence is quarantined by
+								Health/government authorities due to COVID-19 (excluding mandatory government orders to
+								remain at home) </p>
+						</td>
+						<td style="width: 124px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${covid.get('thirdAnswer_a') != null and covid.get('thirdAnswer_b') == null}">
+								<strong><span th:text="${covid.get('thirdAnswer_a')}"></span></strong>
+							</th:block>
+							<th:block th:if="${covid.get('thirdAnswer_b') != null and covid.get('thirdAnswer_a') == null}">
+								<strong><span th:text="${covid.get('thirdAnswer_b')}"></span></strong>
+							</th:block>
+							<th:block th:if="${covid.get('thirdAnswer_b') != null and covid.get('thirdAnswer_a') != null}">
+								<strong><span th:text="${covid.get('thirdAnswer_a')}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${covid.get('thirdAnswer_a') == null and covid.get('thirdAnswer_b') == null }">
+								<strong><span th:text="Yes"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px;height: 43px;">
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Are you currently in
+								good health? If No, please share details </p>
+
+						</td>
+						<td style="width: 124px; height: 43px; text-align: center;border: 1px solid black;">
+							<th:block th:if="${covid.get('fourthAnswer') == null}">
+								<strong><span th:text="Yes"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${covid.get('fourthAnswer') != null}">
+								<strong><span th:text="${covid.get('fourthAnswer')}"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+					<tr style="height: 43px;">
+						<td style="width: 743px; margin: 10px 0 10px; height: 43px;">
+
+							<p align=" justify" style=" margin-left: 7px;margin-right: 7px;">Do you work in an
+								occupation, where you have a higher risk to get in close Contact with COVID-19
+								patients / suspects / testing specimens / coronavirus contaminated material? (If yes,
+								please share details about your exact occupational duties) </p>
+
+						</td>
+						<td style="width: 124px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${covid.get('fifthAnswer') != null}">
+								<strong> <span th:text="${covid.get('fifthAnswer')}"></span></strong>
+							</th:block>
+						</td>
+						<td style="width: 127px; height: 43px; text-align: center; border: 1px solid black;">
+							<th:block th:if="${covid.get('fifthAnswer') == null}">
+								<strong><span th:text="Yes"> </span></strong>
+							</th:block>
+						</td>
+					</tr>
+
+					
+				</tbody>
+			</table>
+		</th:block> -->
+
+		<!-- Nikhilesh -->
+		<th:block th:if="${proposerExit == 'true'}">
+			<table width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2">
+						<p style="padding: 5px; font-size: 12px;">Proposer Details:
+							(If borrower is less than 18 years, Proposer is mandatory.
+							Proposer must be above 18 years of Age)</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5">
+							<tr>
+								<td>Name of Proposer:</td>
+								<td><strong><span th:if="${proFullname != null}" th:text="${proFullname}" /><span
+											th:if="${proFullname == null}"> </span></strong></td>
+							</tr>
+						</table>
+					</td>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5" align="left">
+							<tr>
+								<td>Relationship with the Assured:</td>
+								<td><strong><span th:if="${proRelationWithAssured != null}"
+											th:text="${proRelationWithAssured}" /><span
+											th:if="${proRelationWithAssured == null}"> </span></strong></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<table width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5">
+							<tr>
+								<td>Date of Birth:</td>
+								<td><strong><span th:if="${proDob != null}" th:text="${proDob}" /><span
+											th:if="${proDob == null}">
+										</span></strong></td>
+							</tr>
+						</table>
+					</td>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5" align="left">
+							<tr>
+								<td width="125" align="right">Gender:</td>
+								<td><strong><span th:if="${proGender != null}" th:text="${proGender}" /><span
+											th:if="${proGender == null}"> </span></strong></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<hr style="border-color: #000;" />
+		</th:block>
+
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="50%">
+					<table cellspacing="0" cellpadding="5">
+						<tr>
+							<td>Name of Beneficiary:</td>
+							<td><strong><span th:text="${beneficiaryName}" /></strong></td>
+						</tr>
+					</table>
+				</td>
+				<td width="50%">
+					<table cellspacing="0" cellpadding="5" align="left">
+						<tr>
+							<td>Relationship with the Assured:</td>
+							<td><strong><span th:text="${beneficiaryRelationWithAssured}" /></strong></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="50%">
+					<table cellspacing="0" cellpadding="5">
+						<tr>
+							<td>Date of Birth:</td>
+							<td><strong><span th:text="${beneficiaryDob}" /></strong></td>
+						</tr>
+					</table>
+				</td>
+				<td width="50%">
+					<table cellspacing="0" cellpadding="5" align="left">
+						<tr>
+							<td width="125" align="right">Gender:</td>
+							<td><strong><span th:text="${beneficiaryGender}" /></strong></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<th:block th:if="${appointeeExist == 'true'}">
+			<hr style="border-color: #000;" />
+			<table width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2">
+						<p style="padding: 5px; font-size: 12px;">Please provide
+							Appointee details in case Beneficiary is minor i.e., not
+							attained the age of 18 years</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5">
+							<tr>
+								<td>Name of Appointee:</td>
+								<td><strong><span th:if="${appointeeName != null}" th:text="${appointeeName}" /><span
+											th:if="${appointeeName == null}"> </span></strong></td>
+							</tr>
+						</table>
+					</td>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5" align="left">
+							<tr>
+								<td>Relationship with the Beneficiary:</td>
+								<td><strong><span th:if="${appointeeRelationWithBeneficiary != null}"
+											th:text="${appointeeRelationWithBeneficiary}" /><span
+											th:if="${appointeeRelationWithBeneficiary == null}">
+										</span></strong></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<table width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5">
+							<tr>
+								<td>Date of Birth:</td>
+								<td><strong><span th:if="${appointeeDob != null}" th:text="${appointeeDob}" /><span
+											th:if="${appointeeDob == null}"> </span></strong></td>
+							</tr>
+						</table>
+					</td>
+					<td width="50%">
+						<table cellspacing="0" cellpadding="5" align="left">
+							<tr>
+								<td width="135" align="right">Gender:</td>
+								<td><strong><span th:if="${appointeeGender != null}"
+											th:text="${appointeeGender}" /><span th:if="${appointeeGender == null}">
+										</span></strong></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</th:block>
+
+
+
+		<table cellspacing="0" cellpadding="5" width="100%">
+			<tr>
+				<td>
+					<div>
+						<hr style="border-color: #000;" />
+						<p align=" justify">
+							<strong>Please Note: </strong><strong><span
+									th:text="${groupPolicyHolderName}"></span></strong> has tied-up with
+							Max Life Insurance Company Ltd. for "Max Life Group Credit
+							Life Secure" policy, wherein <strong><span th:text="${groupPolicyHolderName}" /></strong> is
+							the Group
+							Policyholder. The policy offers protection to <strong><span
+									th:text="${loanType}" /></strong> customers of <strong><span
+									th:text="${groupPolicyHolderName}" /></strong> against loan liability
+							in case of an eventuality. The selected option 'borrower' or
+							'co-borrower' will only be covered as life insured under this
+							policy. In case Reducing Cover is opted, the insurance cover
+							shall be equal to the Sum Assured (in no case should exceed
+							the loan amount) opted by the life to be insured, reduced
+							periodically as per the Sum Assured schedule. In case level
+							cover is opted, the insurance cover will be equal to Sum
+							Assured (in no case should exceed the loan amount) opted by
+							the life to be insured, and would remain constant throughout
+							the term of coverage. Coverage is voluntary for all eligible
+							members of the scheme and by signing this Application cum
+							Declaration of Health Form you agree to enroll yourself within
+							the Group Policy. Also, please note that completion of this
+							Form does not mean automatic commencement of insurance
+							coverage. This is only an Application cum Declaration of Good
+							Health Form. You may be required to undergo medical
+							examinations if the need arises and the coverage is not
+							effective while this application is under process. Insurance
+							cover shall commence only after satisfactory completion of
+							medical &amp; financial underwriting conducted by Max Life
+							Insurance Co Ltd and subsequent written confirmation by Max
+							Life Insurance Co Ltd conveying the commencement of insurance
+							coverage &amp; issuing a Certificate of Insurance.
+						</p>
+						<p align=" justify">
+							<strong>Declaration: </strong>I hereby declare that I fully
+							understand the meaning and scope of health declaration form
+							and the questions contained above and I am submitting the
+							completed health declaration of my own volition. I further
+							agree and declare that the statements and declarations herein
+							shall be the basis of the insurance cover being extended on my
+							life and that I have made complete, true and accurate
+							disclosure of all the facts and circumstances as may be
+							relevant. I have not withheld or suppressed any information or
+							facts that may be relevant and material to enable the company
+							to make an informed decision about the acceptability of the
+							risk on my life. Should any statement/s be incomplete,
+							false, wrong or inaccurate or misleading or should there be
+							any omission/s or suppression on my part in disclosing the
+							relevant information, the company shall have the right to
+							cancel the insurance cover on my life, if issued and forfeit
+							any payments received. I fully understand that the issuance of
+							the policy shall be subject to my undergoing medical tests as
+							per the company norms. I undertake to notify the company,
+							forthwith in writing of any change in any of the statements
+							made herein above subsequent to the signing of this Health
+							Declaration Form and prior to acceptance of risk by the
+							company. I also understand that if I foreclose/fully repay the
+							loan for any reason, then I have an option to either continue
+							coverage as per original terms or opt to surrender the
+							benefits under the policy.
+						</p>
+
+						<th:block th:if="${ciriderType == 'Base + Critical Illness (Accelerated Benefit) Rider'}"> <b>
+								<strong><u>Authorization by the individual member of the Group Life Insurance
+										Scheme/Policy:</u></strong></b>
+							<p align="justify" style="margin-top: 0px;">[Applicable
+								only in respect of lender-borrower groups i.e scheduled banks
+								(including co-operative banks) and Small Finance Banks
+								regulated by Reserve Bank of India, Non-Banking Financial
+								Companies registered with Reserve Bank of India, National
+								Housing Bank Regulated Housing Finance Companies and National
+								Minority Development Finance Corporation and its State
+								Channelizing Agencies]:</p>
+						</th:block>
+
+						<!-- <p>I hereby authorize Max Life Insurance Company Limited ("Max Life") to pay the outstanding loan balance as provided in the Credit Account Statement (to be provided by the Master Policyholder) to <strong><span th:text="${groupPolicyHolderName}"/> </strong>("Master Policyholder"), in respect of the loan availed of by me from the Master Policyholder <strong><span th:text="${loanAppNumber}"/></strong> , by deducting the same from the claim proceeds payable to <strong><span th:text="${beneficiaryName}"/></strong> under this group policy on the happening of the insured event</p> -->
+						<p align=" justify">
+							I hereby authorize Max Life Insurance Company Limited (“Max
+							Life”) to pay the outstanding loan balance as provided in the
+							Credit Account Statement (to be provided by the Master
+							Policyholder) to <span th:text="${groupPolicyHolderName}" />
+							("Master Policyholder"), in respect of the loan availed of by
+							me from the Master Policyholder (the application number of
+							which is mentioned herein), by deducting the same from the
+							claim proceeds payable to <strong><span th:text="${beneficiaryName}" /></strong> (my
+							nominee/beneficiary)
+							under this group policy on the happening of the insured event.
+						</p>
+						<!-- <p>I hereby authorized master policy holder to act and receive all amounts on my behalf.</p> -->
+						<p align=" justify">
+							I/We authorize Max Life and <span th:text="${groupPolicyHolderName}"></span> to
+							appropriately
+							adjust the amount of sum insured and/or coverage tenure
+							depending upon the final premium amount remitted to Max Life
+							by the Master Policyholder. I agree to abide by the final
+							coverage terms as per Certificate of Insurance issued by Max
+							Life.
+						</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table cellspacing="0" cellpadding="5" width="100%">
+			<tr>
+				<td>
+					<div>
+						<hr style="border-color: #000;" />
+						<p>
+							<strong>"I further give my consent to and authorize
+								Max Life to pay other proceeds, if any, in favor of Master
+								Policy Holder."</strong>
+						</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<!-- <td>
+						<table>
+							<tr>
+								<td>Signature of Life to be insured:</td>
+								<td><strong>OTP verified</strong></td>
+							</tr>
+						</table>
+					</td> -->
+				<td>
+					<table>
+						<tr>
+							<td>Date:</td>
+							<td><strong><span th:text="${signedDate}" /></strong></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>Place:</td>
+							<td><strong><span th:text="${place}" /></strong></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<hr style="border-color: #000;" />
+		<table cellspacing="0" cellpadding="5" width="100%">
+			<tr>
+				<td><b> Declaration by Bank's Relationship Officer/Sales
+						Manager/Channel Partner Representative </b></td>
+			</tr>
+			<tr>
+				<td>
+					<div align="justify">
+						<ol style="padding-left: 20px;">
+							<li>I/We hereby declare that I have fully explained the
+								contents of Health Declaration Form to the life to be insured
+								and I have truthfully recorded the answers given by the life
+								to be insured.</li>
+							<li>I/We have verified the signature, age and the income
+								details provided by the applicant(s) against records
+								available with us, which are, Age Proof- School
+								certificate/Passport/Birth Certificate/Driving License and
+								Income Proof- Form 16/Income Tax returns /Latest Pay
+								Slip/Appointment letter.</li>
+							<li>It is hereby confirmed that the decision to include
+								co-borrower in the loan has been done on the basis of proper
+								credit appraisal (financial assessment) during the loan
+								process.</li>
+							<li>All necessary information as required by Max Life
+								Insurance Co. Ltd. is collected and presented herewith. Only
+								standard age proof accepted.</li>
+						</ol>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<!-- <table>
+				<tr>
+					<td>
+						<div>
+							<hr style="border-color: #000;"/>
+							<p><strong>Declaration by Bank </strong></p>
+							<ol style="padding-left: 20px;">
+								<li>We have verified the signature, age and the income details provided by the applicant(s) against records available with us, which are, Age Proof- School certificate/Passport/Birth Certificate/Driving License and Income Proof- Form 16/Income Tax returns /Latest Pay Slip/Appointment letter.</li>
+								<li>All necessary information as required by Max Life Insurance Co. Ltd. is collected and presented herewith. Only standard age proof accepted.</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+			</table> -->
+
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td>Date:</td>
+							<td><strong><span th:text="${sfvTimestamp}"></span></strong></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table> <br /> <!-- <th:block th:if="${status == 'Verified'}"> -->
+		<!-- <table width="100%" cellspacing="0" cellpadding="0">
+				<tr> -->
+		<hr style="border-color: #000;" />
+		<th:block th:if="${ciriderType == 'Base + Critical Illness (Accelerated Benefit) Rider'}">
+			<table width="100%" cellspacing="0" cellpadding="5">
+				<tbody>
+					<tr>
+						<td><strong> Important notes :</strong></td>
+					</tr>
+					<tr>
+						<td>
+							<div align="justify">
+								<ol style="padding-left: 20px;">
+									<li><strong>Section 39: </strong> In case nomination
+										facility is availed, section 39 of the Insurance Act, 1938
+										as amended from time to time shall apply.</li>
+
+									<li><b>Section 45: </b> No policy of the life insurance
+										shall be called in question on any ground whatsoever after
+										the expiry of three years from the date of issuance of
+										policy, from the date of the Commencement of Risk or Revival
+										of the policy or the date of the rider to the policy,
+										whichever is later. However, insurer may question the Policy
+										at any time within three years from the date of issuance of
+										policy, from the date of Commencement of Risk or Revival of
+										the policy or the date of the rider to the policy, whichever
+										is later, on the ground of fraud, in which case insurer
+										shall inform Proposer/Life Insured/Legal representatives in
+										writing specifying the grounds and materials on which such
+										decision is based. For other details please refer to Section
+										45 of the Insurance Act, 1938 as amended from time to time.</li>
+
+									<li><b>Section 41:</b>(1) No person shall allow or offer
+										to allow, either directly or indirectly, as an inducement to
+										any person to take or renew or continue an insurance in
+										respect of any kind of risk relating to lives or property in
+										India, any rebate of the whole or part of the commission
+										payable or any rebate of the premium shown on the policy,
+										nor shall any person taking out or renewing or continuing a
+										policy accept any rebate, except such rebate as may be
+										allowed in accordance with published prospectuses or table
+										of the insurer: Provided that acceptance by an insurance
+										agent of commission in connection with a policy of life
+										insurance taken out by himself on his own life shall not be
+										deemed to be acceptance of a rebate of premium within the
+										meaning of this sub-section if at the time of such
+										acceptance the insurance agent satisfies the prescribed
+										conditions establishing that he is a bona fide insurance
+										agent employed by the insurer. (2) Any person making default
+										in complying with the provisions of this section shall be
+										punishable with fine which may extend to ten lakhs rupees.</li>
+								</ol>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</th:block>
+		<footer style="position: relative;">
+			<span style="position: absolute; bottom: 0; right: 0;"> <strong>
+					Authenticated via OTP <span th:text="${otp}"></span> shared for
+					Application Number <span th:text="${loanAppNumber}"></span> on
+					Mobile Number <span th:text="${mobileNo}"></span> on <span th:text="${otpTimestamp}"></span>
+				</strong>
+			</span>
+		</footer>
+		<!-- </tr>
+			</table> -->
+		<!-- </th:block> -->
+
+		</td>
+		</tr>
+		</table>
+
+	</div>
+</body>
+
+</html>
